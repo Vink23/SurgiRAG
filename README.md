@@ -16,6 +16,7 @@
   
 ## 📂 Project Structure
 SurgiRAG/
+
 ├── retriever/ # Retrieval models, FAISS index, reranker
 ├── generator/ # LLM-based generation logic
 ├── evaluation/ # Scripts for evaluation and analysis
