@@ -32,9 +32,9 @@ SurgiRAG/
 
 ### 🔍 Dense Retrieval
 
-- **Retriever**: A fine-tuned `BioBERT` or `Sentence-BioBERT` model encodes both queries and contexts.
+- **Retriever**: A fine-tuned `BioBERT`/`Sentence-BioBERT` model encodes both queries and contexts.
 - **Indexing**: Contexts are embedded and indexed using FAISS with inner product similarity.
-- **Re-ranking**: A `BGE-Med` cross-encoder reranks top-k results for better relevance.
+- **Re-ranking**: A `BGE` cross-encoder reranks top-k results for better relevance.
 
 ### 🧾 Generation
 
@@ -50,7 +50,6 @@ SurgiRAG/
 - **Factual Consistency**: FactCC and Natural Language Inference (Entailment)
 - **Per-Query Reports**: Output includes granular logs for error analysis
 - **LLM Review**: GPT-4-based scoring of helpfulness, accuracy, and hallucinations
-
 ---
 
 ## 🔭 Roadmap: Multimodal Expansion
@@ -58,7 +57,6 @@ SurgiRAG/
 The next version of SurgiRAG will incorporate **surgical video understanding** for enhanced multimodal reasoning.
 
 ### Planned Features
-
 - **Video Retrieval**: Use CLIP, VideoMAE, or Video-LLaMA to encode laparoscopic videos
 - **Joint Context Fusion**: Combine top-k visual and text contexts for generation
 - **Multimodal LLMs**: Add support for visual + text conditioned generation
