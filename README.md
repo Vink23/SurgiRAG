@@ -18,11 +18,17 @@
 SurgiRAG/
 
 ├── retriever/ # Retrieval models, FAISS index, reranker
+
 ├── generator/ # LLM-based generation logic
+
 ├── evaluation/ # Scripts for evaluation and analysis
+
 ├── data/ # Surgical QA corpora
+
 ├── configs/ # Configuration files
+
 ├── scripts/ # Main pipeline and utilities
+
 └── README.md
 
 
