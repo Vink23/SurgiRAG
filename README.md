@@ -23,3 +23,47 @@ SurgiRAG/
 ├── configs/ # Configuration files
 ├── scripts/ # Main pipeline and utilities
 └── README.md
+
+
+
+---
+
+## 🧠 Text Branch Overview
+
+### 🔍 Dense Retrieval
+
+- **Retriever**: A fine-tuned `BioBERT` or `Sentence-BioBERT` model encodes both queries and contexts.
+- **Indexing**: Contexts are embedded and indexed using FAISS with inner product similarity.
+- **Re-ranking**: A `BGE-Med` cross-encoder reranks top-k results for better relevance.
+
+### 🧾 Generation
+
+- **LLM Generator**: Uses a 11B LLaMA-based vision-instruct model for text generation.
+- **Input**: `[Question] + [Top-k Contexts]` → `Answer`
+- **Optimization**: Supports batched generation and inference on a single A100 GPU.
+
+---
+
+## 📊 Evaluation
+
+- **Automatic Metrics**: BLEU, ROUGE-L, BERTScore
+- **Factual Consistency**: FactCC and Natural Language Inference (Entailment)
+- **Per-Query Reports**: Output includes granular logs for error analysis
+- **LLM Review**: GPT-4-based scoring of helpfulness, accuracy, and hallucinations
+
+---
+
+## 🔭 Roadmap: Multimodal Expansion
+
+The next version of SurgiRAG will incorporate **surgical video understanding** for enhanced multimodal reasoning.
+
+### Planned Features
+
+- **Video Retrieval**: Use CLIP, VideoMAE, or Video-LLaMA to encode laparoscopic videos
+- **Joint Context Fusion**: Combine top-k visual and text contexts for generation
+- **Multimodal LLMs**: Add support for visual + text conditioned generation
+- **Extended Evaluation**: Human and benchmark evaluation for multimodal QA
+
+---
+
+
