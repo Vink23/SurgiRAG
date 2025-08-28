@@ -1,4 +1,3 @@
-# DATASCI 266 - NLP Final Report (Summer 2025)
 # SurgiRAG: A Domain-Adaptive Retrieval-Augmented Generation Framework for Procedural Text Understanding in Surgery
 
 This repository contains all notebooks, scripts, and data preprocessing steps for our final project on retrieval-augmented generation (RAG) applied to surgical procedural understanding. The final model integrates domain-specific retrieval, reranking, and generation to answer medical questions grounded in procedural video transcripts and surgical literature.
